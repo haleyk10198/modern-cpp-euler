@@ -28,7 +28,7 @@ int main() {
         year_month_day ymd{sys_days{candidate}};
 
         return ymd.day() == 1d;
-    }) |
+    }) |;
                std::ranges::to<std::vector>();
 
     std::cout << ans.size() << '\n';
